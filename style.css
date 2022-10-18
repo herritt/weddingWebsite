@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.schedule .item {
+    display: flex;
+}
+
+.band {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+.band > img {
+    max-width: 25%;
+    padding-right: 1em;
+}
+
+.centeredRoundedCorners {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.rubberRodeoImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rubberRodeoImages img {
+    max-width: 45%;
+    padding: 5px;
+    border-radius: 1em;
+}
+
+.accomodations .card {
+    display: flex;
+}
+
+.accomodations .card img {
+    margin: auto;
+    width: 50%;
+    border-radius: 10%;
+    padding: 1em;
+}
+
+.accomodations .card .description {
+    padding: 1em;
+}
+
+.dance {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
