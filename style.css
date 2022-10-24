@@ -383,8 +383,7 @@ body {
 
         font-size: 1.125rem; 
     } 
-    
-}
+    }
 
 
 header {
@@ -392,15 +391,43 @@ header {
     font-family: "Style Script";
     font-size: 2em;
     line-height: 0.875rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
     color: var(--clr-primary);
     background: var(--clr-accent);
 
+    border: none;
+
+}
+
+
+header img {
+  width: 100%;
+}
+
+header h1 {
+  color: var(--clr-accent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+header .first {
+  color: var(--clr-accent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 2em);
+}
+
+header .second {
+  color: var(--clr-accent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 3.5em);
 }
 
 main {
@@ -410,7 +437,14 @@ main {
 }
 
 .heroImage {
-    max-width: 100%;
+    max-width: 80%;
+    display: block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 
 .schedule {
@@ -428,6 +462,12 @@ main {
 .description > *
 {
     padding: .5em;a
+}
+
+.description > h1 
+{
+  min-width: 60%;
+  text-align: center;
 }
 
 .mapouter {
@@ -503,15 +543,31 @@ h2 {
     margin: 0px;
 }
 
+.food {
+  padding-top: 3em;
+  padding-bottom: 20em;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  /* border: 5px solid var(--clr-accent); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+  background-image: url(/images/menu.png);
+  background-size: 100% 100%;
+}
+
+.food ul {
+  padding: 0;
+  list-style: none;
+}
+
+
 
 
 /* timeline */
 
 /*- Screen Sizes*/
 /*import fonts*/
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 /*media queries*/
 html {
   box-sizing: border-box;
