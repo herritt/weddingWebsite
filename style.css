@@ -353,6 +353,8 @@ template {
     
 
     --ff-text: "Merriweather", sans-serif;
+
+    --ff-script: "Style Script";
 }
 
 body {
@@ -377,62 +379,33 @@ body {
 
 }
 
-@media (min-width: 50em) {
-
-    body {
-
-        font-size: 1.125rem; 
-    } 
-    }
-
-
 header {
 
-    font-family: "Style Script";
+    font-family: var(--ff-script);
     font-size: 2em;
-    line-height: 0.875rem;
-    position: relative;
+    line-height: .8em;
+    color: var(--clr-accent);
+    text-align: center;
+    min-width: 100%;
+    background-image: url(/images/tree.png);
+    background-size: 100% 100%;
 
-    color: var(--clr-primary);
-    background: var(--clr-accent);
-
-    border: none;
-
-}
-
-
-header img {
-  width: 100%;
 }
 
 header h1 {
-  color: var(--clr-accent);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-}
-
-header .first {
-  color: var(--clr-accent);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 2em);
+  padding-top: 2em;
 }
 
 header .second {
-  color: var(--clr-accent);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 3.5em);
+  padding-bottom: 1em;
+  margin: 0;
 }
-
 main {
 
     font-family: var(--ff-text);
+    margin: auto;
+    width: 100%;
+    margin-top: 0;
 
 }
 
@@ -450,6 +423,10 @@ main {
 .schedule {
     background-color: var(--clr-accent);
     color: var(--clr-primary);
+}
+
+.schedule h1 {
+  text-align: center;
 }
 
 .description {
@@ -496,11 +473,10 @@ main {
 }
 
 .centeredRoundedCorners {
-    max-width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
     border-radius: 1em;
     margin-bottom: 1em;
 }
@@ -518,20 +494,26 @@ main {
     border-radius: 1em;
 }
 
-.accomodations .card {
-    display: flex;
+.accomodations {
+  text-align: center;
+  padding: 1em;
 }
 
-.accomodations .card img {
+.accomodations img {
     margin: auto;
-    width: 50%;
+    width: 80%;
+    max-width: 800px;
     border-radius: 10%;
     padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.accomodations .card .description {
-    padding: 1em;
+.card > ul {
+  list-style: none;
 }
+
 
 .dance {
     display: flex;
@@ -544,15 +526,20 @@ h2 {
 }
 
 .food {
+  padding: 1em;
   padding-top: 3em;
-  padding-bottom: 20em;
   text-align: center;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   /* border: 5px solid var(--clr-accent); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
   background-image: url(/images/menu.png);
   background-size: 100% 100%;
+  
+}
+
+.food-section .lastPara {
+  display: none;
 }
 
 .food ul {
@@ -560,7 +547,30 @@ h2 {
   list-style: none;
 }
 
+.food h1, .food h2 {
+  font-family: var(--ff-script);
+  color: var(--clr-accent);
+}
 
+.entertainment {
+  padding-top: 1em;
+
+}
+
+.entertainment > * {
+  text-align: center;
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.entertainment img {
+  margin-bottom: 2em;
+}
+
+.entertainment h1 {
+  margin: auto;
+  padding-top: 1em;
+}
 
 
 /* timeline */
