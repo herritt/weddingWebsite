@@ -573,6 +573,15 @@ h2 {
 }
 
 
+footer {
+  background: var(--clr-accent);
+  color: var(--clr-primary);
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-family: var(--ff-text);
+}
+
 /* timeline */
 
 /*- Screen Sizes*/
